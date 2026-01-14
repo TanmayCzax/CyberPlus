@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber+ Programming Language</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0f2027, #000);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #00ffcc;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .hero {
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00ffcc, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .typing {
+      margin-top: 20px;
+      font-size: 22px;
+      color: #b5b5b5;
+      height: 30px;
+    }
+
+    .buttons {
+      margin-top: 50px;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 15px 35px;
+      border-radius: 30px;
+      border: 2px solid #00ffcc;
+      background: transparent;
+      color: #00ffcc;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #00ffcc;
+      color: #000;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,255,204,0.4);
+    }
+
+    section {
+      padding: 100px 80px;
+    }
+
+    .section-title {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #00ffcc;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid rgba(0,255,204,0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,255,204,0.15);
+    }
+
+    .card h3 {
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+
+    .card pre {
+      background: #000;
+      padding: 15px;
+      border-radius: 10px;
+      overflow-x: auto;
+      color: #00ffcc;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 30px;
+        flex-direction: column;
+      }
+      .hero h1 {
+        font-size: 42px;
+      }
+      section {
+        padding: 80px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Cyber+</div>
+  <nav>
+    <a href="#learn">Learn</a>
+    <a href="#get">Get</a>
+    <a href="#creator">Creator</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>The Cyber+ Language</h1>
+  <div class="typing" id="typing"></div>
+  <div class="buttons">
+    <a class="btn" href="https://github.com/TanmayCzax/Cyber-Programming-language-Alpha" target="_blank">Learn Cyber+</a>
+    <a class="btn" href="https://github.com/TanmayCzax/Cyber-Programming-language-Alpha" target="_blank">Get Cyber+</a>
+    <a class="btn" href="#creator">Creator</a>
+  </div>
+</div>
+
+<section id="learn">
+  <h2 class="section-title">Cyber+ Examples</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Print Output</h3>
+      <pre>
+Compute("Hello Cyber+");
+// Prints text output to the console
+      </pre>
+    </div>
+    <div class="card">
+      <h3>Port Scanning</h3>
+      <pre>
+Scan_Port("127.0.0.1", 80);
+// Checks whether a TCP port is open or closed
+      </pre>
+    </div>
+    <div class="card">
+      <h3>Subdomain Enumeration</h3>
+      <pre>
+Subdomain_Enum("example.com");
+// Enumerates subdomains using CT logs
+      </pre>
+    </div>
+    <div class="card">
+      <h3>Reverse IP Lookup</h3>
+      <pre>
+Reverse_IP("8.8.8.8");
+// Resolves domains hosted on an IP
+      </pre>
+    </div>
+    <div class="card">
+      <h3>IP Intelligence</h3>
+      <pre>
+IP_Info("8.8.8.8");
+// Fetches detailed IP information
+      </pre>
+    </div>
+    <div class="card">
+      <h3>Phone Intelligence</h3>
+      <pre>
+Phone_Info("+919876543210");
+// Provides phone number intelligence
+      </pre>
+    </div>
+    <div class="card">
+      <h3>Hash Generation</h3>
+      <pre>
+Hash_Compute("password123", "sha256");
+// Supports md5, sha1, sha256
+      </pre>
+    </div>
+  </div>
+</section>
+
+<section id="get">
+  <h2 class="section-title">Download & Install</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Step 1</h3>
+      <p>Visit the Cyber+ GitHub repository.</p>
+    </div>
+    <div class="card">
+      <h3>Step 2</h3>
+      <p>Clone or download the repository files.</p>
+    </div>
+    <div class="card">
+      <h3>Step 3</h3>
+      <p>Follow README instructions to run Cyber+.</p>
+    </div>
+  </div>
+</section>
+
+<section id="creator">
+  <h2 class="section-title">Creator</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Tanmay Czax</h3>
+      <p>Creator of Cyber+ Programming Language. Built to simplify and power cybersecurity automation with a custom DSL.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Cyber+ Programming Language · Built for Hackers & Developers
+</footer>
+
+<script>
+  const texts = [
+    "A Cybersecurity-Focused Programming Language",
+    "Automate Ethical Hacking Tasks",
+    "Simple Syntax · Powerful Commands",
+    "Built for the Future of Cyber Ops"
+  ];
+
+  let index = 0;
+  let char = 0;
+  const speed = 80;
+  const typingDiv = document.getElementById('typing');
+
+  function typeEffect() {
+    if (char < texts[index].length) {
+      typingDiv.textContent += texts[index].charAt(char);
+      char++;
+      setTimeout(typeEffect, speed);
+    } else {
+      setTimeout(eraseEffect, 1500);
+    }
+  }
+
+  function eraseEffect() {
+    if (char > 0) {
+      typingDiv.textContent = texts[index].substring(0, char - 1);
+      char--;
+      setTimeout(eraseEffect, speed / 2);
+    } else {
+      index = (index + 1) % texts.length;
+      setTimeout(typeEffect, speed);
+    }
+  }
+
+  typeEffect();
+</script>
+
+</body>
+</html>
